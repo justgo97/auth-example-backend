@@ -27,6 +27,8 @@ const Auth = (req: IReq, res: IRes, next: NextFunction) => {
         return res.status(403).json({ error: "Unauthorized (2)." });
       }
 
+      // TODO: implement lastToken feature for more security and flexibility
+
       // If we found our user
       req.user = { ...user.basicData };
 

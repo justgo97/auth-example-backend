@@ -2,16 +2,16 @@ const Paths = {
   Base: "/api",
   Auth: {
     Base: "/auth",
-    Login: "/login",
-    Register: "/register",
-    Refresh: "/refresh",
+    Login: "/login", // done
+    Register: "/register", // done
+    Refresh: "/refresh", // done
   },
   Users: {
     Base: "/users",
-    Get: "/all",
-    Add: "/add",
-    Update: "/update",
-    Delete: "/delete/:id",
+    Get: "/all", // done
+    Add: "/add", // TODO
+    Update: "/update", // done
+    Delete: "/delete/:id", // TODO
   },
 };
 

@@ -70,7 +70,8 @@ authRouter.post(Paths.Auth.Register, async (req, res) => {
 
     return res.status(201).json({ token, user: { ...result.basicData } });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    console.error(error.message);
+    return res.status(500).json({ error: "Server error." });
   }
 });
 
